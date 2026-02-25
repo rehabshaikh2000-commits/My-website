@@ -4216,6 +4216,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
   window.addEventListener('resize', () => { if(document.getElementById('screen-form').classList.contains('active')) drawGrowthChart(); });
 
 });
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
 </script>
 </body>
 </html>
